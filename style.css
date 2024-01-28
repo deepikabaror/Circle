@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wallpaper{
+    height: 100vh;
+    width: 100vw;
+    --dark-black:#0a0909;
+    background-color: var(--dark-black);
+}
+.outside{
+    position: relative;
+    top: 10%;
+    left: 20%;
+    height: 650px;
+    width: 650px;
+    border: 10px solid green;
+    background-color: deeppink;
+    border-radius: 500px;
+    animation:babber;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: normal;
+    transform: rotateX(360deg);
+    
+}
+.middle{
+    position: relative;
+    top: 8%;
+    left: 5%;
+    height: 550px;
+    width: 550px;
+    border: 10px solid rgba(3, 248, 252, 0.469);
+    border-radius: 500px;
+    background-color: rgb(95, 53, 70);
+}
+.inside{
+    position: relative;
+    top: 10%;
+    left: 12%;
+    height: 400px;
+    width: 400px;
+    border: 10px solid rgba(217, 58, 19, 0.469);
+    background-color: blue;
+    border-radius: 500px;
+    transform-style: preserve-3d;
+
+    animation: animate1 4s linear infinite;
+}
+@keyframes animate1 {
+    0%{
+        transform: rotateY(-360deg) rotateY(0deg);
+    }
+    80%{
+        transform: rotateY(-360deg) rotateY(360deg);
+    }
+}
+
+
+img{
+    border-radius: 700px;
+    top: 10%;
+    left: 9%;
+}
+
+
+
+.center{
+    position: relative;
+    top: 10%;
+    left: 8%;
+    height: 300px;
+    width: 300px;
+    border: 10px solid rgba(18, 145, 195, 0.469);
+    border-radius: 500px;
+    
+    transform-style: preserve-3d;
+
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotateX(-360deg) rotateY(0deg);
+        background-color: khaki;
+    }
+    100%{
+        transform: rotateX(-360deg) rotateY(360deg);
+        background-color: yellow;
+    }
+}
+
+
+/* transform: rotate(90deg);
+    background-color: darkorange;
+    transform: skew(-45deg);
+} */
+
+
+ /* animation: babber;
+animation-duration: 3s;
+animation-iteration-count:4;
+animation-iteration-count:infinite;
+animation-timing-function: ease-in;
+animation-delay: 1s;
+animation-direction: normal; */
